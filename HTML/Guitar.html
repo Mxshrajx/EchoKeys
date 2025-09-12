@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoKeys - Guitar</title>
+    <link rel="icon" type="img/png" href="/IMAGE/EchoKeys Website Logo.png">
+    <link href="/CSS/Bootstrap.css" rel="stylesheet">
+    <link href="/CSS/BootstrapIcon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/Guitar.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/IMAGE/EchoKeys Website Logo.png" alt="EchoKeys Logo" width="50" height="50"
+                    class="rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/HTML/About.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Instruments
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/HTML/Instruments.html">All Instruments</a></li>
+                            <li><a class="dropdown-item" href="/HTML/Piano.html">Piano</a></li>
+                            <li><a class="dropdown-item active" href="/HTML/Guitar.html">Guitar</a></li>
+                            <li><a class="dropdown-item" href="/HTML/Drum.html">Drum</a></li>
+                            <li><a class="dropdown-item" href="/HTML/Flute.html">Flute</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/HTML/ConcertRoom.html">Concert Room</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/HTML/Contact.html">Contact Me</a>
+                    </li>
+                </ul>
+                <i class="bi bi-info-circle-fill info-btn" data-bs-toggle="modal" data-bs-target="#infoModal"></i>
+
+
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <h1>🎸 Play Guitar Strings</h1>
+        <div class="guitar" id="guitar">
+            <div class="string" data-sound="E"><span class="label">E</span></div>
+            <div class="string" data-sound="A"><span class="label">A</span></div>
+            <div class="string" data-sound="D"><span class="label">D</span></div>
+            <div class="string" data-sound="G"><span class="label">G</span></div>
+            <div class="string" data-sound="B"><span class="label">B</span></div>
+            <div class="string" data-sound="e1"><span class="label">e</span></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 EchoKeys | All Rights Reserved</p>
+        <div>
+            <a href="https://www.linkedin.com/in/vishal-mishra-dev/" class="text-white me-3"
+                target="_blank">LinkedIn</a>
+            <a href="https://wa.me/916205749026" class="text-white me-3" target="_blank">WhatsApp</a>
+        </div>
+    </footer>
+
+
+    <div class="modal fade" id="infoModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">How to Play</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>🎵 Click the strings with your mouse or use keyboard keys.</p>
+                    <p><strong>Keyboard Mapping:</strong></p>
+                    <p>E: Q | A: W | D: E | G: R | B: T | e1: Y</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/JS/Bootstrap.js"></script>
+    <script src="/JS/Guitar.js"></script>
+</body>
+
+</html>

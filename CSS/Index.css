@@ -1,0 +1,114 @@
+.hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.concert-room {
+    background: linear-gradient(to right, #141E30, #243B55);
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary,
+.btn-light,
+.btn-outline-light {
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-light:hover,
+.btn-outline-light:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    position: relative;
+    display: inline-block;
+    animation: fadeIn 2s ease-in-out;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #2575fc;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+/* Developer Bio */
+.developer {
+    margin-top: 50px;
+    padding: 40px 20px;
+    background: #222;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 60px;
+}
+
+.developer img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #0dcaf0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.developer img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #0dcaf0;
+}
+
+.developer h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.developer a {
+    color: #0dcaf0;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.developer a:hover {
+    color: #00aaff;
+}

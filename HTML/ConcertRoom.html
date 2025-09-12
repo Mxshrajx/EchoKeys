@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EchoKeys - Concert Room</title>
+  <link rel="icon" type="img/png" href="/IMAGE/EchoKeys Website Logo.png">
+  <link href="/CSS/Bootstrap.css" rel="stylesheet">
+  <link href="/CSS/BootstrapIcon.css" rel="stylesheet">
+  <link rel="stylesheet" href="/CSS/ConcertRoom.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/index.html">
+        <img src="/IMAGE/EchoKeys Website Logo.png" alt="EchoKeys Logo" width="50" height="50"
+          class="rounded-circle">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/HTML/About.html">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Instruments
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="/HTML/Instruments.html">All Instruments</a></li>
+              <li><a class="dropdown-item" href="/HTML/Piano.html">Piano</a></li>
+              <li><a class="dropdown-item" href="/HTML/Guitar.html">Guitar</a></li>
+              <li><a class="dropdown-item" href="/HTML/Drum.html">Drum</a></li>
+              <li><a class="dropdown-item" href="/HTML/Flute.html">Flute</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="/HTML/ConcertRoom.html">Concert Room</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/HTML/Contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="concertMain">
+    <h1>🎤 Concert Room</h1>
+    <div class="instrument-buttons">
+      <button data-instrument="piano">Piano</button>
+      <button data-instrument="guitar">Guitar</button>
+      <button data-instrument="drum">Drum</button>
+      <button data-instrument="flute">Flute</button>
+    </div>
+
+    <!-- Piano -->
+    <div class="piano" id="piano">
+        <!-- White Keys -->
+        <div class="white" data-note="C3"></div>
+        <div class="white" data-note="D3"></div>
+        <div class="white" data-note="E3"></div>
+        <div class="white" data-note="F3"></div>
+        <div class="white" data-note="G3"></div>
+        <div class="white" data-note="A3"></div>
+        <div class="white" data-note="B3"></div>
+        <div class="white" data-note="C4"></div>
+      
+        <!-- Black Keys -->
+        <div class="black" data-note="Csharp3" style="left: 45px;"></div>
+        <div class="black" data-note="Dsharp3" style="left: 105px;"></div>
+        <!-- No black key for E -->
+        <div class="black" data-note="Fsharp3" style="left: 225px;"></div>
+        <div class="black" data-note="Gsharp3" style="left: 285px;"></div>
+        <div class="black" data-note="Asharp3" style="left: 345px;"></div>
+      </div>
+      
+
+    <!-- Guitar -->
+    <div class="guitar" id="guitar">
+      <div class="string" data-sound="E"></div>
+      <div class="string" data-sound="A"></div>
+      <div class="string" data-sound="D"></div>
+      <div class="string" data-sound="G"></div>
+      <div class="string" data-sound="B"></div>
+      <div class="string" data-sound="e1"></div>
+    </div>
+
+    <!-- Drum -->
+    <div class="drum-kit" id="drumKit">
+      <div class="drum" id="kick" data-sound="kick">Kick</div>
+      <div class="drum" id="snare" data-sound="snare">Snare</div>
+      <div class="drum" id="hihat" data-sound="hihat">Hi-Hat</div>
+      <div class="drum" id="tom1" data-sound="tom1">Tom1</div>
+      <div class="drum" id="tom2" data-sound="tom2">Tom2</div>
+      <div class="drum" id="floorTom" data-sound="floortom">Floor</div>
+      <div class="drum" id="crash" data-sound="crash">Crash</div>
+      <div class="drum" id="ride" data-sound="ride">Ride</div>
+    </div>
+
+    <!-- Flute -->
+    <div class="flute" id="flute">
+      <div class="note" data-sound="C">C</div>
+      <div class="note" data-sound="D">D</div>
+      <div class="note" data-sound="E">E</div>
+      <div class="note" data-sound="F">F</div>
+      <div class="note" data-sound="G">G</div>
+      <div class="note" data-sound="A">A</div>
+      <div class="note" data-sound="B">B</div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 EchoKeys | All Rights Reserved</p>
+    <div>
+      <a href="https://www.linkedin.com/in/vishal-mishra-dev/" target="_blank">LinkedIn</a> |
+      <a href="https://wa.me/916205749026" target="_blank">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="/JS/Bootstrap.js"></script>
+  <script src="/JS/ConcertRoom.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background: #111;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .drum-kit {
+    position: relative;
+    width: 90%;
+    max-width: 700px;
+    height: 400px;
+    margin-top: 30px;
+  }
+
+  .drum {
+    position: absolute;
+    border-radius: 50%;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.1s, transform 0.1s;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  }
+
+  .drum.active {
+    background: #0dcaf0;
+    transform: scale(1.15);
+    color: black;
+  }
+
+  /* Drum positions and sizes */
+  #kick { width: 120px; height: 120px; bottom: 0; left: 50%; transform: translateX(-50%); }
+  #snare { width: 80px; height: 80px; bottom: 120px; left: 40%; }
+  #hihat { width: 70px; height: 70px; bottom: 180px; left: 25%; }
+  #tom1 { width: 70px; height: 70px; bottom: 180px; left: 50%; transform: translateX(-50%); }
+  #tom2 { width: 70px; height: 70px; bottom: 180px; left: 65%; }
+  #floorTom { width: 80px; height: 80px; bottom: 120px; left: 60%; }
+  #crash { width: 60px; height: 60px; bottom: 250px; left: 15%; }
+  #ride { width: 60px; height: 60px; bottom: 250px; left: 75%; }
+
+  footer {
+    background: #222;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    color: #aaa;
+  }
+
+  .info-btn {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #0dcaf0;
+  }

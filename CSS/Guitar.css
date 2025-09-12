@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #1a1a1a, #3c3c3c);
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+  }
+
+  h1 {
+    margin-bottom: 40px;
+    font-size: 2.7rem;
+    color: #f0db4f;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  }
+
+  .guitar {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 95%;
+    max-width: 900px;
+  }
+
+  .string {
+    height: 6px;
+    background: linear-gradient(to right, #ccc, #888, #ccc);
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.15s, background 0.2s;
+  }
+
+  .string:hover {
+    background: linear-gradient(to right, #eee, #aaa, #eee);
+  }
+
+  .string.active {
+    background: linear-gradient(to right, #0dcaf0, #007bff, #0dcaf0);
+    transform: scaleY(1.5);
+    box-shadow: 0 0 12px #0dcaf0;
+  }
+
+  .label {
+    position: absolute;
+    left: -40px;
+    top: -10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #f0db4f;
+  }
+
+  footer {
+    background: #222;
+    text-align: center;
+    padding: 12px;
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+
+  .info-btn {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #0dcaf0;
+    margin-left: 15px;
+  }
